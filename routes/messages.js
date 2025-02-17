@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.get("/", async (req, res) => {
+router.get("/list_messages", async (req, res) => {
     try {
         const messages = await Message.find();
         res.json(messages);

@@ -16,7 +16,7 @@ mongoose
     .then(() => console.log("Conectado ao MongoDB"))
     .catch((err) => console.error("Erro ao conectar ao MongoDB:", err));
 
-app.use("/api/auth", require("./routes/auth"));
+// app.use("/api/auth", require("./routes/auth"));
 app.use("/api/messages", require("./routes/messages"));
 
 const PORT = process.env.PORT || 5000;
